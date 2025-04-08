@@ -13,3 +13,4 @@ Näited: telefoninumber, nimi, nimetus, isikukood
 4. FOREIGN KEY - võõrvõti / väline võti - вторичный ключ
 определяет набор значений из другой таблицы
 5. CHECK - CHECK(naine, mees) - определяет набор значений
+![{08890203-59EB-49E8-BA24-E30DBD19A00C}](https://github.com/user-attachments/assets/f488fe1a-13b1-4a72-b345-d952189cf927)
