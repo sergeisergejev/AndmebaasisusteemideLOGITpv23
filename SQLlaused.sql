@@ -1,10 +1,10 @@
 --kommentaar
---SQL SERVER Management Stuudio
+--Xampp control panel
 --Connect TO:
---Server Name: (localdb)\MSSQLLocalDB
--- Authentification 2 tüüpi:
---1. Windows Auth - localdb admini õigused
---2. SQL Server Auth - kontrollida varem tehtud kasutajad
+--Server Name: localhost - 127.0.0.1
+-- Authentification:
+-- Kasutaja: root
+-- parool: ei ole
 
 
 CREATE DATABASE sergejevLOGITpv23;
