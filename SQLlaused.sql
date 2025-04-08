@@ -11,9 +11,9 @@ CREATE DATABASE sergejevLOGITpv23;
 USE sergejevLOGITpv23;
 
 --taabeli loomine
---identity(1,1) - ise täidab tabeli 1,2,3,...
+--auto_increment - ise täidab tabeli 1,2,3,...
 CREATE TABLE inimene(
-inimeneID int Primary Key identity(1,1),
+inimeneID int Primary Key auto_increment,
 nimi varchar(50) unique,
 sunniaeg date,
 telefon char(12),
