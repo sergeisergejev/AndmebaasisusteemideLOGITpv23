@@ -38,3 +38,29 @@ end;
 
 --kutse
 exec kustutaFilm 1;
+
+exec lisaFilm 'Tõde ja õigus osa 3', 240, 'testtest';
+--protseduur, mis uuendab filmiPikkus 5% suuremaks
+create procedure uuendaFilmiPikkus
+AS
+BEGIN
+select * from filmid;
+UPDATE filmid set filmPikkus=filmPikkus*1.05;
+select * from filmid;
+end;
+
+--kutse
+exec uuendaFilmiPikkus;
+
+--protseduur, mis uuendab filmiPikkus. kasutaja sisestav väärtus
+create procedure uuendaFilmiPikkus2
+@arv decimal(5,2)
+AS
+BEGIN
+select * from filmid;
+UPDATE filmid set filmPikkus=filmPikkus*@arv;
+select * from filmid;
+end;
+
+--kutse
+exec uuendaFilmiPikkus2 @arv=0.5;
